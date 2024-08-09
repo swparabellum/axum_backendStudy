@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./script/script.js"></script>
+    <title>게시판</title>
+</head>
+
+<body>
+    <header>
+        <div style="display: inline-block;">
+            <h2 id="top">환영!</h2>
+            <img class="fit-pic" src="media/miku.png" alt="miku">
+        </div>
+        <div class="box">
+            <form>
+                로그인(작동안함)<br>
+                <input type="text" placeholder="ID" title="아이디"><br>
+                <input type="password" placeholder="PASSWORD" title="비밀번호"><br>
+                <input type="submit" value="로그인">
+                <input type="button" value="회원가입" onclick="location.href='signup.html'">
+            </form>
+        </div>
+        <hr>
+    </header>
+    <nav style="background-color: burlywood;">
+        <h3>네비게이션</h3>
+        <div  class="box">
+            <a class="url"  href="noNameWeb.html">메인</a></div>
+        <div  class="box">
+            <a class="url" href="aboutMe.html">About Me...</a>
+        </div>
+    </nav>
+    <section>
+        <article id="JS1" style="background-color: azure;">
+            <h3>자바스크립트1</h3>
+            <div class="box">
+                배경화면 관련<br>
+                <button type="button" onclick="clickBtn('yellow')" ;>배경색을 yellow로</button>
+                <button type="button" onclick="clickBtn('white')" ;>배경색을 white로</button>
+                <button type="button" onclick="changeBackgroundColor()">랜덤하게 색 변경!!</button>
+                <!-- https://stackoverflow.com/questions/64089791/button-to-change-background-color-randomly -->
+            </div>
+            <div class="box">
+                <button type="button" onclick="counter()" ;>3번 클릭할때마다 alert띄움</bitton>
+                    <button type="button" onclick="counter2('plus')" ;>버튼 누른수만큼 아래 숫자가 증가</button>
+                    <div id="getCount">0</div>
+            </div>
+        </article>
+        <article id="JS2" style="background-color: azure;">
+            <h3>자바스크립트2</h3>
+            <div class="box">
+                <a class="url" href="makeTable.html" target="_blank">테이블만들기</a>
+            </div>
+        </article>
+    </section>
+    <footer>
+        강승우, 2024년 <br>
+        더 발전된 내일의 나를 위하여... <br>
+        E-mail: swparabellum@gmail.com
+    </footer>
+    <div class="box" style="bottom: 0; right: 0; position: fixed;">
+        <a href="#top">맨위로</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.box{
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+.url{
+    text-decoration: none;
+}
+
+.center{
+    margin: auto;
+}
+
+.fit-pic{
+    width: 150px;
+}

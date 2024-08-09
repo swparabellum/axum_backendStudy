@@ -1,0 +1,5 @@
+[database]
+url = "postgres://sw:1234@localhost/sw"
+[jwt_key]
+key = "superdupersecret"
+kid = "supersecretkey"

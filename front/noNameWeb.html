@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
     <script src="./script/script.js"></script>
     <title>게시판</title>
@@ -14,11 +15,11 @@
         </div>
         <div class="box">
             <form>
-                로그인(작동안함)<br>
-                <input type="text" placeholder="ID" title="아이디"><br>
-                <input type="password" placeholder="PASSWORD" title="비밀번호"><br>
-                <input type="submit" value="로그인">
-                <input type="button" value="회원가입" onclick="location.href='signup.html'">
+                로그인<br>
+                <input type="text" placeholder="id" id="id" title="아이디"><br>
+                <input type="password" placeholder="password" id="password" title="비밀번호"><br>
+                <input type="button" value="로그인" onClick="json_submit()"/>
+                <input type="button" value="회원가입" onClick="location.href='signup.html'">
             </form>
         </div>
         <hr>
@@ -56,7 +57,6 @@
     </section>
     <footer>
         강승우, 2024년 <br>
-        더 발전된 내일의 나를 위하여... <br>
         E-mail: swparabellum@gmail.com
     </footer>
     <div class="box" style="bottom: 0; right: 0; position: fixed;">

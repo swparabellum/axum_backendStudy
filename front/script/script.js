@@ -34,3 +34,17 @@ function changeBackgroundColor() {
         document.body.style.backgroundColor = 'rgb(' + x + ',' + y + ',' + z + ')';
         //https://stackoverflow.com/questions/64089791/button-to-change-background-color-randomly
 };
+
+function json_submit() {
+    let obj = {
+        email: document.getElementById("id").value,
+        password: document.getElementById("password").value,
+    };
+    console.log(obj);
+
+    let xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("POST","api/login");
+    xmlhttp.setRequestHeader("Content-type", "application/json");
+    xmlhttp.send(JSON.stringify(obj));
+
+}
